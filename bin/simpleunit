@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+"use strict";
+
+var simpleunit = require('simpleunit');
+
+var args = process.argv.slice(2);
+var nargs = args.length;
+
+for (var k = 0; k < nargs; k++)
+    simpleunit.test(args[k], { verbose: true });
