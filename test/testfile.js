@@ -24,3 +24,12 @@ simpleunit.test(path.resolve(__dirname, './files/twofunctions.js'));
 
 assert.equal(twofunctions.counter1, 1);
 assert.equal(twofunctions.counter2, 1);
+
+// test modules in directory
+
+simpleunit.test(path.resolve(__dirname, './files'));
+
+assert.equal(onefunction.counter, 2);
+assert.equal(twofunctions.counter1, 2);
+assert.equal(twofunctions.counter2, 2);
+
