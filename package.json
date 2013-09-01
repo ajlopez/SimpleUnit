@@ -1,7 +1,7 @@
 { "name": "simpleunit"
 , "description": "Simple test framework for JavaScript/Node.js"
 , "keywords": [ "test", "javascript", "node", "framework" ]
-, "version": "0.0.1"
+, "version": "0.0.2"
 , "author": "Angel 'Java' Lopez <webmaster@ajlopez.com> (http://www.ajlopez.com)"
 , "repository": { "type": "git", "url": "git://github.com/ajlopez/SimpleUnit.git" }
 , "main": "./lib/simpleunit.js"

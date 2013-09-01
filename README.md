@@ -57,14 +57,10 @@ npm test
 
 TBD
 
-## To Do
-
-- Asynchronous support
-- `test.expect`, `test.async`, `test.done` functions.
-
 ## Versions
 
 - 0.0.1: Published
+- 0.0.2: Published,  asynchronous support via  `test.async`, `test.done` functions.
 
 ## Inception
 

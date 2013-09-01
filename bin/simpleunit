@@ -5,7 +5,14 @@
 var simpleunit = require('simpleunit');
 
 var args = process.argv.slice(2);
-var nargs = args.length;
 
-for (var k = 0; k < nargs; k++)
-    simpleunit.test(args[k], { verbose: true });
+processFile();
+
+function processFile() {
+    if (!args.length)
+        return;
+        
+    var arg = args.shift();
+    
+    simpleunit.test(arg, processFile, { verbose: true });
+}
