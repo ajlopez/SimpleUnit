@@ -2,7 +2,12 @@
 
 "use strict";
 
-var simpleunit = require('simpleunit');
+var path = require('path');
+var fs = require('fs');
+
+var libpath = path.join(path.dirname(fs.realpathSync(__filename)), '../lib/simpleunit.js');
+
+var simpleunit = require(libpath);
 
 var args = process.argv.slice(2);
 
