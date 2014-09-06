@@ -21,7 +21,7 @@ function runTest(test, cb) {
 	proc.stdin.end();
 
 	proc.on('exit', function(code) {
-		if ((stdout !== 'pass\n' && stdout !== '') || stderr !== '') {
+		if (stdout.indexOf("Error") >= 0 || stderr !== '') {
 			return cb(new Error(
 					'Test `'+ test+ '` failed.\n'+
 					'code: '+ code+ '\n'+
