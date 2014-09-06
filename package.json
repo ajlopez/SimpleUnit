@@ -12,9 +12,11 @@
 , "bin": {
     "simpleunit": "./bin/simpleunit"
   }
+  
 , "dependencies": {
     "colors": "0.6.x"
   }
+  
 , "devDependencies": {
   }
 }
