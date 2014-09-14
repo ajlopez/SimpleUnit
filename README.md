@@ -64,6 +64,7 @@ TBD
 - 0.0.3: Published; fixed bin to load library
 - 0.0.4: Published: strange error in line feeds bin file
 - 0.0.5: Published: adding color and print test name
+- 0.0.6: Published: timeout in test.async
 
 ## Inception
 
