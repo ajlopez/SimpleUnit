@@ -27,5 +27,5 @@ function processFile() {
     if (arg[0] === '-')
         setImmediate(processFile);
     else
-        simpleunit.test(arg, processFile, { verbose: true });
+        simpleunit.test(arg, processFile, options);
 }
