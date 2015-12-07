@@ -19,10 +19,13 @@ npm install simpleunit -g
 ## Usage
 
 ```
-simpleunit <name> [<name> ... ]
+simpleunit <name> [<name> ... ] [-r | --recursive]
 ```
 where `name` is a directory or a `.js` file. If `name` is a directory, it processes all the `.js` files in
 directory.
+
+The options `-r`, `--recursive` indicates to process all directories in the tree. Without this option, if a directory is specified,
+only the files in the directory are processed, without processing the files in subdirectories.
 
 Each `.js` is a module that exports functions receiving a parameter, ie `test`:
 
@@ -65,6 +68,7 @@ TBD
 - 0.0.4: Published: strange error in line feeds bin file
 - 0.0.5: Published: adding color and print test name
 - 0.0.6: Published: timeout in test.async
+- 0.0.7: Published: recursive option
 
 ## Inception
 
