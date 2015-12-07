@@ -11,6 +11,11 @@ var simpleunit = require(libpath);
 
 var args = process.argv.slice(2);
 
+var options = { verbose: true };
+
+if (args.indexOf('-r') >= 0 || args.indexOf('--recursive') >= 0)
+    options.recursive = true;
+
 processFile();
 
 function processFile() {
@@ -19,5 +24,8 @@ function processFile() {
         
     var arg = args.shift();
     
-    simpleunit.test(arg, processFile, { verbose: true });
+    if (arg[0] === '-')
+        setImmediate(processFile);
+    else
+        simpleunit.test(arg, processFile, { verbose: true });
 }

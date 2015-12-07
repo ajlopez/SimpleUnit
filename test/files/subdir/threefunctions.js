@@ -1,0 +1,1 @@
+exports.counter1 = 0;exports.counter2 = 0;exports.counter3 = 0;exports['one function'] = function (test) {    test.ok(1);    exports.counter1++;};exports['another function'] = function (test) {    test.ok(1);    exports.counter2++;};exports['another function 2'] = function (test) {    test.ok(1);    exports.counter3++;};
