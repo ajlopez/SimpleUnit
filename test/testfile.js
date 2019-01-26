@@ -9,6 +9,7 @@ var onefunction = require('./files/onefunction');
 var twofunctions = require('./files/twofunctions');
 var threefunctions = require('./files/subdir/threefunctions');
 var asyncfunction = require('./files/asyncfunction');
+var asyncawaitfunction = require('./files/asyncawaitfunction');
 
 assert.equal(onefunction.counter, 0);
 assert.equal(twofunctions.counter1, 0);
@@ -17,6 +18,7 @@ assert.equal(threefunctions.counter1, 0);
 assert.equal(threefunctions.counter2, 0);
 assert.equal(threefunctions.counter3, 0);
 assert.equal(asyncfunction.asynccounter, 0);
+assert.equal(asyncawaitfunction.asyncawaitcounter, 0);
 
 simpleunit.test(path.resolve(__dirname, './files/onefunction.js'), function (err, result) {
     assert.equal(err, null);
@@ -50,6 +52,7 @@ function step3() {
         assert.equal(threefunctions.counter2, 0);
         assert.equal(threefunctions.counter3, 0);
         assert.equal(asyncfunction.asynccounter, 1);
+        assert.equal(asyncawaitfunction.asyncawaitcounter, 1);
         step4();
     });
 }
@@ -66,5 +69,6 @@ function step4() {
         assert.equal(threefunctions.counter2, 1);
         assert.equal(threefunctions.counter3, 1);
         assert.equal(asyncfunction.asynccounter, 2);
+        assert.equal(asyncawaitfunction.asyncawaitcounter, 2);
     }, { recursive: true });
 }

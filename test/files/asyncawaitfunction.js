@@ -1,0 +1,1 @@
+exports.asyncawaitcounter = 0;async function getPromise() {    return new Promise((resolve, reject) =>        setTimeout(() => resolve(), 100));}exports['one function'] = async function (test) {    await getPromise();    console.log('inc');    exports.asyncawaitcounter++;    test.done();};    
