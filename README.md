@@ -62,13 +62,14 @@ TBD
 
 ## Versions
 
-- 0.0.1: Published
-- 0.0.2: Published;  asynchronous support via  `test.async`, `test.done` functions
-- 0.0.3: Published; fixed bin to load library
-- 0.0.4: Published: strange error in line feeds bin file
-- 0.0.5: Published: adding color and print test name
-- 0.0.6: Published: timeout in test.async
-- 0.0.7: Published: recursive option
+- 0.0.1: initial version
+- 0.0.2: asynchronous support via  `test.async`, `test.done` functions
+- 0.0.3: fixed bin to load library
+- 0.0.4: strange error in line feeds bin file
+- 0.0.5: adding color and print test name
+- 0.0.6: timeout in test.async
+- 0.0.7: recursive option
+- 0.0.8: async/await support
 
 ## Inception
 
